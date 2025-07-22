@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sébastien SPIEGEL - Dév. Web | Code & Création</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="theme-toggle" id="themeToggle">
+        <i class="fas fa-moon"></i>
+    </div>
+
+    <header>
+        <canvas id="headerBgCanvas" class="header-bg-effect"></canvas>
+        <img src="Photo_Seb_Profil.jpg" alt="Photo de Profil de Sébastien Spiegel" class="profile-img">
+        <h1>Sébastien SPIEGEL</h1>
+        <p class="subtitle">Développeur Web | Code & Création</p>
+    </header>
+
+    <div class="container">
+        <aside class="sidebar">
+            <div class="card fade-in" id="contact-card">
+                <h2><i class="fas fa-terminal"></i> Contact.<span style="color: var(--secondary-accent);">(data)</span></h2>
+                <ul>
+                    <li><i class="fas fa-map-marker-alt"></i> <span>"72 Bd Doré, 10280 Fontaine-les-Grés"</span></li>
+                    <li><i class="fas fa-phone-alt"></i> <a href="tel:+33658104960">"06 58 10 49 60"</a></li>
+                    <li><i class="fas fa-envelope"></i> <a href="mailto:codev.spiegel@gmail.com">"codev.spiegel@gmail.com"</a></li>
+                    <li><i class="fab fa-github"></i> <a href="https://github.com/CodevSpiegel" target="_blank">"github.com/CodevSpiegel"</a></li>
+                    <li><i class="fas fa-car"></i> <span>"Permis B + Véhicule"</span></li>
+                </ul>
+            </div>
+
+            <div class="card fade-in" id="langages-card">
+                <h2><i class="fas fa-code"></i> Langages.<span style="color: var(--secondary-accent);">(syntax)</span></h2>
+                <div class="tags-list">
+                    <span class="tag">HTML</span>
+                    <span class="tag">CSS</span>
+                    <span class="tag">JavaScript</span>
+                    <span class="tag">PHP</span>
+                    <span class="tag">SQL</span>
+                </div>
+            </div>
+
+            <div class="card fade-in" id="qualites-card">
+                <h2><i class="fas fa-star-of-life"></i> Qualités.<span style="color: var(--secondary-accent);">(attributes)</span></h2>
+                <div class="tags-list">
+                    <span class="tag">Patient</span>
+                    <span class="tag">Logique</span>
+                    <span class="tag">Curieux</span>
+                    <span class="tag">Autodidacte</span>
+                    <span class="tag">Polyvalent</span>
+                    <span class="tag">Sérieux</span>
+                    <span class="tag">Motivé</span>
+                </div>
+            </div>
+
+            <div class="card fade-in" id="loisirs-card">
+                <h2><i class="fas fa-laptop-code"></i> Loisirs.<span style="color: var(--secondary-accent);">(passion)</span></h2>
+                <div class="tags-list">
+                    <span class="tag">Programmation</span>
+                    <span class="tag">Travail du bois</span>
+                    <span class="tag">Musique</span>
+                    <span class="tag">Échecs</span>
+                </div>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <div class="card fade-in" id="about-card">
+                <h2><i class="fas fa-user-circle"></i> class AboutMe {<span style="color: var(--tertiary-accent);"> /* Votre parcours */</span> }</h2>
+                <p>
+                    Âgé de 53 ans, je suis un professionnel **<span style="color: var(--warning-color);">autonome</span>**, **<span style="color: var(--warning-color);">autodidacte</span>** et **<span style="color: var(--warning-color);">proactif</span>**, passionné par le développement web et la résolution de problèmes complexes. Mon parcours unique m'a permis de forger une approche de travail basée sur le **clean code**, la **flexibilité**, la **performance** et le **sérieux**. N'hésitez pas à explorer mes projets sur <a href="https://github.com/CodevSpiegel" target="_blank">GitHub</a> pour avoir un aperçu concret de mes réalisations. Je suis constamment à l'affût de nouvelles technologies et toujours prêt à apprendre.
+                </p>
+                <p>
+                    Ma curiosité naturelle et ma polyvalence m'ont amené à explorer différents domaines techniques, me permettant de m'adapter rapidement aux besoins des projets et de concrétiser des idées innovantes.
+                </p>
+            </div>
+
+            <div class="card fade-in" id="competences-card">
+                <h2><i class="fas fa-cogs"></i> function getSkills() {<span style="color: var(--tertiary-accent);"> /* Vos savoir-faire */</span> }</h2>
+                <div class="tags-list">
+                    <span class="tag clickable-skill" data-skill="webdev">Développement d’applications Web</span>
+                    <span class="tag clickable-skill" data-skill="prestashop">Prestashop</span>
+                    <span class="tag clickable-skill" data-skill="bdd">Gestion Base de Données (SQL)</span>
+                    <span class="tag clickable-skill" data-skill="serveur">Administration Serveur (OVH)</span>
+                </div>
+            </div>
+
+            <div class="card fade-in" id="experience-card">
+                <h2><i class="fas fa-history"></i> const professionalExperience = [<span style="color: var(--tertiary-accent);"> /* Vos missions clés */</span> ];</h2>
+                <div class="experience-item">
+                    <h3>// 2017: siteECommerce.deploy();</h3>
+                    <p class="date"><span style="color: var(--primary-accent);">Date:</span> "2017"</p>
+                    <p><span style="color: var(--warning-color);">Mission:</span> Mise en production d'un site E-commerce (Prestashop) de vente en ligne de pièces détachées pour anciens modèles de moto de marque BMW.</p>
+                    <ul>
+                        <li><span style="color: var(--secondary-accent);">&gt;</span> Intégration et configuration de la solution e-commerce Prestashop.</li>
+                        <li><span style="color: var(--secondary-accent);">&gt;</span> Gestion de catalogue produits et optimisation des fiches articles.</li>
+                        <li><span style="color: var(--secondary-accent);">&gt;</span> Maintenance et suivi technique du site.</li>
+                    </ul>
+                </div>
+
+                <div class="experience-item">
+                    <h3>// 2003: zakademy.init();</h3>
+                    <p class="date"><span style="color: var(--primary-accent);">Date:</span> "2003"</p>
+                    <p><span style="color: var(--warning-color);">Mission:</span> Création et administration d’une plateforme de jeux gratuits en ligne. (Zakademy.com)</p>
+                    <ul>
+                        <li><span style="color: var(--secondary-accent);">&gt;</span> Développement d’applications : Loto, Jeux à gratter, Forum, Chat, Boutique cadeaux.</li>
+                        <li><span style="color: var(--secondary-accent);">&gt;</span> Gestion et Administration de la base de données (SQL).</li>
+                        <li><span style="color: var(--secondary-accent);">&gt;</span> Gestion Serveur dédié OVH.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="card fade-in" id="education-card">
+                <h2><i class="fas fa-book-open"></i> let educationJourney = [<span style="color: var(--tertiary-accent);"> /* Votre évolution */</span> ];</h2>
+                <div class="education-item">
+                    <h3>// 2025: devWebMobile.certification();</h3>
+                    <p class="date"><span style="color: var(--primary-accent);">Période:</span> "2025"</p>
+                    <p><span style="color: var(--warning-color);">Formation:</span> Titre professionnel de développeur web et web mobile</p>
+                </div>
+
+                <div class="education-item">
+                    <h3>// 2002-2024: selfTaught.learning();</h3>
+                    <p class="date"><span style="color: var(--primary-accent);">Période:</span> "2002 - 2024"</p>
+                    <p><span style="color: var(--warning-color);">Formation:</span> Informatique en autodidacte - Troyes</p>
+                </div>
+
+                <div class="education-item">
+                    <h3>// 1990: soundAndLight.diploma();</h3>
+                    <p class="date"><span style="color: var(--primary-accent);">Période:</span> "1990"</p>
+                    <p><span style="color: var(--warning-color);">Formation:</span> Son & Lumière - Paris</p>
+                </div>
+
+                <div class="education-item">
+                    <h3>// 1989: soundAndVideo.diploma();</h3>
+                    <p class="date"><span style="color: var(--primary-accent);">Période:</span> "1989"</p>
+                    <p><span style="color: var(--warning-color);">Formation:</span> Son & Vidéo - Paris</p>
+                </div>
+
+                <div class="education-item">
+                    <h3>// 1988: bepc.completed();</h3>
+                    <p class="date"><span style="color: var(--primary-accent);">Période:</span> "1988"</p>
+                    <p><span style="color: var(--warning-color);">Formation:</span> Études jusqu'en 3ème (BEPC)</p>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <footer>
+        <p><span style="color: var(--secondary-accent);">console.log</span>(<span style="color: var(--tertiary-accent);">'&copy; 2025 Sébastien SPIEGEL - CV interactif propulsé par le code.'</span>);</p>
+    </footer>
+
+    <div id="skillModal" class="skill-modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h3 id="modalSkillTitle"></h3>
+            <p id="modalSkillDescription"></p>
+            <div id="modalSkillTags" class="modal-skills-list"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
