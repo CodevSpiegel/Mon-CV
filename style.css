@@ -267,6 +267,10 @@
             transition: color 0.3s ease;
         }
 
+        .periode-date {
+            color: #ddd;
+        }
+
         .experience-item ul {
             list-style: none;
             padding-left: 0;
